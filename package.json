@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch-scss": "node-sass -w public/assets/sass -o public/assets/css"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.14.1",
+    "node-sass": "^4.5.0",
     "wowjs": "^1.1.3"
   }
 }
