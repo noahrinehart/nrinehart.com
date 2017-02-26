@@ -1,8 +1,8 @@
 /***************
 *****Resets*****
 ****************/
-
-html, body {
+body,
+html {
     width: 100%;
     height: 100%;
     margin: 0 !important;
@@ -10,60 +10,65 @@ html, body {
     margin-top: 0;
 }
 
- body {
-   background-color: #5050A0;
- }
+body {
+    background-color: #5050A0;
+}
 
- .main-container-wrapper {
-     -webkit-animation: MainContainerWrapperAnimation 60s ease infinite;
-     -moz-animation: MainContainerWrapperAnimation 60s ease infinite;
-     animation: MainContainerWrapperAnimation 60s ease infinite;
-     background: linear-gradient(270deg, #454545, #5050A0, #52B79A);
-     background-size: 800% 800%;
-     margin-top: -16px;
-     margin-bottom: -16px;
- }
+.main-container-wrapper {
+    -webkit-animation: MainContainerWrapperAnimation 60s ease infinite;
+    -moz-animation: MainContainerWrapperAnimation 60s ease infinite;
+    animation: MainContainerWrapperAnimation 60s ease infinite;
+    background: linear-gradient(270deg, #454545, #5050A0, #52B79A);
+    background-size: 800% 800%;
+    margin-top: -16px;
+    margin-bottom: -16px;
+}
 
- @-webkit-keyframes MainContainerWrapperAnimation {
-     0% {
-         background-position: 0 50%
-     }
-     50% {
-         background-position: 100% 50%
-     }
-     100% {
-         background-position: 0 50%
-     }
- }
+.main-container-inner {
+    margin: 0 auto;
+    background-color: white;
+    max-width: calc(100% - 4em);
+    width: 70em;
+    box-shadow: 0 0 15px #000;
+    -moz-box-shadow: 0 0 15px #000;
+    -webkit-box-shadow: 0 0 10px #000
+}
+@-webkit-keyframes MainContainerWrapperAnimation {
+    0% {
+        background-position: 0 50%;
+    }
 
- @-moz-keyframes MainContainerWrapperAnimation {
-     0% {
-         background-position: 0 50%
-     }
-     50% {
-         background-position: 100% 50%
-     }
-     100% {
-         background-position: 0 50%
-     }
- }
+    50% {
+        background-position: 100% 50%;
+    }
 
+    100% {
+        background-position: 0 50%;
+    }
+}
+@-moz-keyframes MainContainerWrapperAnimation {
+    0% {
+        background-position: 0 50%;
+    }
 
- @keyframes MainContainerWrapperAnimation {
-     0% {
-         background-position: 0 50%
-     }
-     50% {
-         background-position: 100% 50%
-     }
-     100% {
-         background-position: 0 50%
-     }
- }
+    50% {
+        background-position: 100% 50%;
+    }
 
- .main-container-inner {
-     margin: 0 auto;
-     background-color: white;
-     max-width: calc(100% - 4em);
-     width: 70em;
- }
+    100% {
+        background-position: 0 50%;
+    }
+}
+@keyframes MainContainerWrapperAnimation {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}

@@ -1,1 +1,1 @@
-new WOW().init();
+sr.reveal('.testReveal', {container: '.testContainer'})
