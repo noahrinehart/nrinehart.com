@@ -9,19 +9,20 @@
 
 #header-logo-image {
     max-width: 100px;
+    margin-top: -5em;
 }
 
 .header-text {
-    width: 600px;
+    width: 800px;
     height: 400px;
     position: absolute;
     left: 50%;
     top: 50%;
-    margin: -200px 0 0 -300px;
+    margin: -200px 0 0 -400px;
     text-align: center;
 
     h1 {
-        font-size: 4em;
+        font-size: 5em;
         color: #fff;
         font-family: Nunito, Helvetica, sans-serif;
         font-weight: 300;
@@ -30,86 +31,12 @@
     }
 
     h2 {
-        font-size: 1.25em;
+        font-size: 1.5em;
         color: #fff;
         font-family: Nunito, Helvetica, sans-serif;
         font-weight: 300;
         line-height: 5;
         letter-spacing: -0.025em;
-    }
-}
-
-
-.bounce-arrow {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left: -20px;
-  margin-bottom: 75px;
-  -webkit-animation-name: bounce;
-  -moz-animation-name: bounce;
-  animation-name: bounce;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-fill-mode: both;
-  -webkit-animation-duration: 1.75s;
-  -moz-animation-duration: 1.75s;
-  -ms-animation-duration: 1.75s;
-  animation-duration: 1.75s;
-}
-
-@-webkit-keyframes bounce {
-    0%,
-    100%,
-    20%,
-    50%,
-    80% {
-        -webkit-transform: translateY(0);
-    }
-
-    40% {
-        -webkit-transform: translateY(-30px);
-    }
-
-    60% {
-        -webkit-transform: translateY(-15px);
-    }
-}
-@-moz-keyframes bounce {
-    0%,
-    100%,
-    20%,
-    50%,
-    80% {
-        -moz-transform: translateY(0);
-    }
-
-    40% {
-        -moz-transform: translateY(-30px);
-    }
-
-    60% {
-        -moz-transform: translateY(-15px);
-    }
-}
-@keyframes bounce {
-    0%,
-    100%,
-    20%,
-    50%,
-    80% {
-        transform: translateY(0);
-    }
-
-    40% {
-        transform: translateY(-30px);
-    }
-
-    60% {
-        transform: translateY(-15px);
+        width: 100%;
     }
 }

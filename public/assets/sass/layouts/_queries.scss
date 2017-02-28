@@ -1,0 +1,46 @@
+@media screen and (max-width: 666px) {
+
+  #header-logo-image {
+      max-width: 50px;
+  }
+
+
+  .header-text {
+      width: 600px;
+      height: 400px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin: -200px 0 0 -300px;
+      text-align: center;
+
+      h1 {
+          font-size: 2em;
+          color: #fff;
+          font-family: Nunito, Helvetica, sans-serif;
+          font-weight: 300;
+          line-height: 1.5;
+          letter-spacing: -0.025em;
+      }
+
+      h2 {
+          font-size: 1em;
+          color: #fff;
+          font-family: Nunito, Helvetica, sans-serif;
+          font-weight: 300;
+          line-height: 5;
+          letter-spacing: -0.025em;
+      }
+  }
+
+
+  .contact-info {
+      bottom: 16px;
+      right: 16px;
+
+      #contact-info-github {
+        padding-right: 16px;
+      }
+  }
+
+}

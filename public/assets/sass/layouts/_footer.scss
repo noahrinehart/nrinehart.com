@@ -1,8 +1,30 @@
-/***************
-*****Footer*****
-****************/
+.contact-info {
+  display: inline-block;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
 
+    a:link {
+      color: inherit;
+    }
 
-ul.footer-icons {
-    margin-bottom: -16px;
+    a:visited {
+      color: inherit;
+    }
+
+    a:hover {
+      color: inherit;
+    }
+
+    .fa {
+      color: white;
+    }
+
+    .fa:hover {
+      color: black;
+    }
+
+    #contact-info-github {
+      padding-right: 1em;
+    }
 }

@@ -12,16 +12,16 @@ html {
 
 body {
     background-color: #5050A0;
-}
-
-.main-container-wrapper {
     -webkit-animation: MainContainerWrapperAnimation 60s ease infinite;
     -moz-animation: MainContainerWrapperAnimation 60s ease infinite;
     animation: MainContainerWrapperAnimation 60s ease infinite;
     background: linear-gradient(270deg, #454545, #5050A0, #52B79A);
     background-size: 800% 800%;
-    margin-top: -16px;
-    margin-bottom: -16px;
+}
+
+.main-container-wrapper {
+
+
 }
 
 .main-container-inner {
