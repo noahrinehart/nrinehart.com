@@ -1,0 +1,8 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+app	/home/nrinehart/Developer/websites/nrinehart/index.js	/^var app = express();$/;"	v	language:JavaScript
+Bear	/home/nrinehart/Developer/websites/nrinehart/index.js	/^var Bear = require('.\/app\/models\/bear');$/;"	v	language:JavaScript
+bodyParser	/home/nrinehart/Developer/websites/nrinehart/index.js	/^var bodyParser = require('body-parser');$/;"	v	language:JavaScript
+favicon	/home/nrinehart/Developer/websites/nrinehart/index.js	/^var favicon = require('serve-favicon'); $/;"	v	language:JavaScript
+mongoose	/home/nrinehart/Developer/websites/nrinehart/index.js	/^var mongoose = require('mongoose');$/;"	v	language:JavaScript
+path	/home/nrinehart/Developer/websites/nrinehart/index.js	/^var path = require('path');$/;"	v	language:JavaScript
+router	/home/nrinehart/Developer/websites/nrinehart/index.js	/^var router = require('.\/app\/routes');$/;"	v	language:JavaScript
