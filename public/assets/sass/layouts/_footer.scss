@@ -1,30 +1,41 @@
+@mixin link-color() {
+  a:link {
+    color: inherit;
+  }
+
+  a:visited {
+    color: inherit;
+  }
+
+  a:hover {
+    color: inherit;
+  }
+}
+
+
+.contact-logos {
+  position: fixed;
+  bottom: 0;
+  left: .5em;
+}
+
 .contact-info {
   display: inline-block;
-    position: absolute;
-    bottom: 1em;
-    right: 1em;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
 
-    a:link {
-      color: inherit;
-    }
+  @include link-color(); 
 
-    a:visited {
-      color: inherit;
-    }
+  .fa {
+    color: white;
+  }
 
-    a:hover {
-      color: inherit;
-    }
+  .fa:hover {
+    color: black;
+  }
 
-    .fa {
-      color: white;
-    }
-
-    .fa:hover {
-      color: black;
-    }
-
-    #contact-info-github {
-      padding-right: 1em;
-    }
+  #contact-info-github {
+    padding-right: 1em;
+  }
 }

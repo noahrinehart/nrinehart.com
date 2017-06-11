@@ -1,1 +1,192 @@
-body,html{width:100%;height:100%;margin:0 !important;padding:0 !important;margin-top:0}body{background-color:#5050A0;-webkit-animation:MainContainerWrapperAnimation 60s ease infinite;-moz-animation:MainContainerWrapperAnimation 60s ease infinite;animation:MainContainerWrapperAnimation 60s ease infinite;background:linear-gradient(270deg, #454545, #5050A0, #52B79A);background-size:800% 800%}.main-container-inner{margin:0 auto;background-color:white;max-width:calc(100% - 4em);width:70em;box-shadow:0 0 15px #000;-moz-box-shadow:0 0 15px #000;-webkit-box-shadow:0 0 10px #000}@-webkit-keyframes MainContainerWrapperAnimation{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}@-moz-keyframes MainContainerWrapperAnimation{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}@keyframes MainContainerWrapperAnimation{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}.header-wrapper{margin:0 auto;height:100vh;text-align:center}#header-logo-image{max-width:100px;margin-top:-5em}.header-text{width:800px;height:400px;position:absolute;left:50%;top:50%;margin:-200px 0 0 -400px;text-align:center}.header-text h1{font-size:5em;color:#fff;font-family:Nunito, Helvetica, sans-serif;font-weight:300;line-height:1.5;letter-spacing:-0.025em}.header-text h2{font-size:1.5em;color:#fff;font-family:Nunito, Helvetica, sans-serif;font-weight:300;line-height:5;letter-spacing:-0.025em;width:100%}.contact-info{display:inline-block;position:absolute;bottom:1em;right:1em}.contact-info a:link{color:inherit}.contact-info a:visited{color:inherit}.contact-info a:hover{color:inherit}.contact-info .fa{color:white}.contact-info .fa:hover{color:black}.contact-info #contact-info-github{padding-right:1em}@media screen and (max-width: 666px){#header-logo-image{max-width:50px}.header-text{width:600px;height:400px;position:absolute;left:50%;top:50%;margin:-200px 0 0 -300px;text-align:center}.header-text h1{font-size:2em;color:#fff;font-family:Nunito, Helvetica, sans-serif;font-weight:300;line-height:1.5;letter-spacing:-0.025em}.header-text h2{font-size:1em;color:#fff;font-family:Nunito, Helvetica, sans-serif;font-weight:300;line-height:5;letter-spacing:-0.025em}.contact-info{bottom:16px;right:16px}.contact-info #contact-info-github{padding-right:16px}}
+/***************
+*****Resets*****
+****************/
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-top: 0; }
+
+body {
+  background-color: #5050A0;
+  -webkit-animation: MainContainerWrapperAnimation 60s ease infinite;
+  -moz-animation: MainContainerWrapperAnimation 60s ease infinite;
+  animation: MainContainerWrapperAnimation 60s ease infinite;
+  background: linear-gradient(270deg, #454545, #5050A0, #52B79A);
+  background-size: 800% 800%; }
+
+.main-container-inner {
+  margin: 0 auto;
+  background-color: white;
+  max-width: calc(100% - 4em);
+  width: 70em;
+  box-shadow: 0 0 15px #000;
+  -moz-box-shadow: 0 0 15px #000;
+  -webkit-box-shadow: 0 0 10px #000; }
+
+@-webkit-keyframes MainContainerWrapperAnimation {
+  0% {
+    background-position: 0 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0 50%; } }
+
+@-moz-keyframes MainContainerWrapperAnimation {
+  0% {
+    background-position: 0 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0 50%; } }
+
+@keyframes MainContainerWrapperAnimation {
+  0% {
+    background-position: 0 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0 50%; } }
+
+/***************
+*****Header*****
+****************/
+.header-wrapper {
+  margin: 0 auto;
+  height: 100vh;
+  text-align: center; }
+
+#header-logo-image {
+  max-width: 100px;
+  margin-top: -5em; }
+
+.header-text {
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -200px 0 0 -400px;
+  text-align: center; }
+  .header-text h1 {
+    font-size: 5em;
+    color: #fff;
+    font-family: Nunito, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: -0.025em; }
+  .header-text h2 {
+    font-size: 1.5em;
+    color: #fff;
+    font-family: Nunito, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 5;
+    letter-spacing: -0.025em;
+    width: 100%; }
+
+.contact-logos {
+  position: fixed;
+  bottom: 0;
+  left: .5em; }
+
+.contact-info {
+  display: inline-block;
+  position: absolute;
+  bottom: 1em;
+  right: 1em; }
+  .contact-info a:link {
+    color: inherit; }
+  .contact-info a:visited {
+    color: inherit; }
+  .contact-info a:hover {
+    color: inherit; }
+  .contact-info .fa {
+    color: white; }
+  .contact-info .fa:hover {
+    color: black; }
+  .contact-info #contact-info-github {
+    padding-right: 1em; }
+
+@media screen and (max-width: 666px) {
+  #header-logo-image {
+    max-width: 50px; }
+  .header-text {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -200px 0 0 -300px;
+    text-align: center; }
+    .header-text h1 {
+      font-size: 2em;
+      color: #fff;
+      font-family: Nunito, Helvetica, sans-serif;
+      font-weight: 300;
+      line-height: 1.5;
+      letter-spacing: -0.025em; }
+    .header-text h2 {
+      font-size: 1em;
+      color: #fff;
+      font-family: Nunito, Helvetica, sans-serif;
+      font-weight: 300;
+      line-height: 5;
+      letter-spacing: -0.025em; }
+  .contact-info {
+    bottom: 16px;
+    right: 16px; }
+    .contact-info #contact-info-github {
+      padding-right: 16px; } }
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; }
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px; }
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent; }
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s; }
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
