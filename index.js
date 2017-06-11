@@ -4,11 +4,10 @@ var favicon = require('serve-favicon');
 var path = require('path');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+require('dotenv').load();
 
 var Bear = require('./app/models/bear');
 var router = require('./app/routes');
-
-const PORT = process.env.PORT || 8080;
 
 var app = express();
 
@@ -28,15 +27,10 @@ app.use('/', express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public/assets/images/favicon.ico')));
 
 // Config routes
-app.use('/api', router);
+// app.use('/api', router);
 
-app.listen(PORT, () => {
-    console.log('Listening on port ' + PORT  + '!');
+app.listen(process.env.PORT, () => {
+    console.log('Listening on port ' + process.env.PORT  + '!');
 });
 
 module.exports = app;
-
-mongoose.connect('mongodb://test:mowgli11@ds059365.mlab.com:59365/noahrinehart');
-
-
-
