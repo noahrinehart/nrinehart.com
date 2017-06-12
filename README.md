@@ -1,8 +1,9 @@
 # nrinehart
 
 > Noah Rinehart's Website
+> Built with Webpack, ran with Vue, made with :heart:
 
-## Build Setup
+## How to build
 
 ``` bash
 # install dependencies
@@ -13,6 +14,8 @@ npm run dev
 
 # build for production with minification
 npm run build
+
+# run simple production server
+nodejs server.js
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
