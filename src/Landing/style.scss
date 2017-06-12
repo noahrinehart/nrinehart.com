@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+
+.landing-wrapper {
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -200px 0 0 -400px;
+  text-align: center;
+}
+
+#header-logo-image {
+  max-width: 100px;
+}
+
+.landing-header {
+  h1 {
+    font-size: 5em;
+    color: #fff;
+    font-family: Nunito, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    color: #fff;
+    font-family: Nunito, sans-serif;
+    font-weight: 300;
+    letter-spacing: -0.025em;
+    width: 100%;
+  }
+}

@@ -1,0 +1,60 @@
+/***************
+*****Resets*****
+****************/
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-top: 0;
+}
+
+body {
+    background-color: #5050A0;
+    -webkit-animation: MainContainerWrapperAnimation 60s ease infinite;
+    -moz-animation: MainContainerWrapperAnimation 60s ease infinite;
+    animation: MainContainerWrapperAnimation 60s ease infinite;
+    background: linear-gradient(270deg, #454545, #5050A0, #52B79A);
+    background-size: 800% 800%;
+}
+
+@-webkit-keyframes MainContainerWrapperAnimation {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+@-moz-keyframes MainContainerWrapperAnimation {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+@keyframes MainContainerWrapperAnimation {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}

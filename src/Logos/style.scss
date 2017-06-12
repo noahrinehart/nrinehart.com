@@ -1,0 +1,36 @@
+@mixin link-color() {
+  a:link { color: inherit; }
+  a:visited { color: inherit; }
+  a:hover { color: inherit; }
+}
+
+.logos-wrapper {
+  position: fixed;
+  bottom: 0;
+  color: #fff;
+
+  .left-logos {
+    bottom: 1em;
+    padding-left: .75em;
+  }
+
+  svg {
+    fill: white;
+  }
+
+  svg:hover {
+    fill: black;
+    @include link-color();
+  }
+
+  .right-logos {
+    display: inline-block;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+  }
+
+  #logo-github {
+    padding-right: 1em;
+  }
+}
