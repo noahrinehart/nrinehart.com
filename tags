@@ -1,4 +1,0 @@
-!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
-app	/home/nrinehart/Developer/websites/nrinehart-webpack/nrinehart-webpack/nrinehart/server.js	/^var app = express();$/;"	v	language:JavaScript
-favicon	/home/nrinehart/Developer/websites/nrinehart-webpack/nrinehart-webpack/nrinehart/server.js	/^var favicon = require('serve-favicon');$/;"	v	language:JavaScript
-path	/home/nrinehart/Developer/websites/nrinehart-webpack/nrinehart-webpack/nrinehart/server.js	/^var path = require('path');$/;"	v	language:JavaScript
