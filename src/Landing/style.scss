@@ -2,13 +2,17 @@
 
 .landing-wrapper {
   position: absolute;
-  width: 800px;
-  height: 400px;
-  z-index: 15;
+  width: 80%;
+  height: 40%;
   top: 50%;
   left: 50%;
-  margin: -200px 0 0 -400px;
+  margin: -20% 0 0 -40%;
   text-align: center;
+
+  @media (max-width: 679px) {
+    top: 25%;
+  }
+
 }
 
 #header-logo-image {
@@ -23,6 +27,11 @@
     font-weight: 300;
     line-height: 1.5;
     letter-spacing: 0.025em;
+
+    @media (max-width: 472px) {
+      font-size: 3em;
+    }
+
   }
 
   h2 {
@@ -32,5 +41,9 @@
     font-weight: 300;
     letter-spacing: -0.025em;
     width: 100%;
+
+    @media (max-width: 472px) {
+      font-size: 1em;
+    }
   }
 }
