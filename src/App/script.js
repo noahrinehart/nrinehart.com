@@ -7,7 +7,4 @@ export default {
     'landing': Landing,
     'logos': Logos,
   },
-  data() {
-    return {}
-  },
 }

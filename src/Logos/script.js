@@ -7,8 +7,5 @@ export default {
   name: 'Logos',
   components: {
     Icon
-  },
-  data() {
-    return {}
-  },
+  }
 }
