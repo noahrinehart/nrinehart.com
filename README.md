@@ -1,4 +1,5 @@
-# nrinehart
+# nrinehart     [![Build Status](https://travis-ci.org/noahrinehart/nrinehart.svg?branch=master)](https://travis-ci.org/noahrinehart/nrinehart)
+
 
 > Noah Rinehart's Website
 
