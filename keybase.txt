@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/noahrinehart
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://nrinehart.com
+  * I am noahrinehart (https://keybase.io/noahrinehart) on keybase.
+  * I have a public key with fingerprint 73C1 D3D1 BB85 541B A959  2DB0 5274 F4ED C608 61D6
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101c9c4aae1d96654ca7ed9d081dee3aa463eca43dd9a2284a966173b99b32782a00a",
+      "fingerprint": "73c1d3d1bb85541ba9592db05274f4edc60861d6",
+      "host": "keybase.io",
+      "key_id": "5274f4edc60861d6",
+      "kid": "0101c9c4aae1d96654ca7ed9d081dee3aa463eca43dd9a2284a966173b99b32782a00a",
+      "uid": "acd987f1ccc2dd147af1ab54486b3119",
+      "username": "noahrinehart"
+    },
+    "service": {
+      "hostname": "nrinehart.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1501198603,
+  "expire_in": 157680000,
+  "prev": "2249e830f436e0843d384477971907e9c3bcc8c581ad12b3eb934a80a8d71d74",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.73
+Comment: https://keybase.io/crypto
+
+yMImAnicrZJbSBVBGMfPyUteuigSaQ9B+5AUXnZ2Z29H06KCJEmhiJTgNDszx7Op
+u8dz9phH8UFNuwgh9iBqSdBDlGQoItFDZGkaZYlCQvaQmQRRhBgomNis5FuPzcsw
+8/3+//l/HzOyPcqV4O5ovj4UnugdcL8evhV2ldRGEus43SIRzlPHldONjVYQGrK9
+5QbhPBwPeIA1DBGigGiyLEGMFEo0wquAUCoiBGWRYgRFQjQkCCpEjAKKqGuaLgqK
+KiCeR1wG5zPMMhoMBA3TZraKiAERCdB1VZIg0JEmaQLReUlQoA9SgmVelQGRmdBv
+hRwFC6ejEM0yLHbHDt6NeP/g/3Pu8IYdwkRTFR/AGAuEAKggH0C6BKEq6yIAmgOG
+aNBElZTRpoX8rFHqR0Gbq8/gWKXawNQZrtPNJrWJZGGrkhkEgpZtYauClfy2HQh5
+HKkdCTjsJap7/7p4dcMkbJhMUU2DIcMyOQ9gJLYNxxZIPMujyryYwdGagBGkXsMh
+JEVWebacd2g1sxQEqFFV5H1QlCmvskGIKoSKoilA4xWqYVHHWMWSChABgi5SXRMh
+UnmkEgUQBXJOX1WmxXk0FhOVMcuQUWYiOxykXP3zZ+ejXe4EV2zMFueTuRLikza/
+3mhTnKut92yemJRS3F2cvJK3u2vn3VOLv9PONRyd7T/wI5Cam1/SEvu5seCgnhzT
+eXi56OHp4cG362M9rQ3g0JLZNlOUOJdmcNOZUzfmsnv2xBH56fjSk9XU0uZdL1bc
+y+2PcaXpyY99X1cwcH92b9+R0oXmdpgx6V+7WRQ1GJiP63t3Z7XmXv02/6fpfbcn
+w/s/vkkZ6IpKuRY/2p4+OBMLwKPUdH/XjqqL31cbS66MAmGi6ctE4fzsWEftwrcT
+4Q7v0BpozGk6bmd3H6tpHM8MLZz8YBVebcts5b5GXXjZeaaF9448uDzl25rf//OX
+0LCeTgvk2t7S6PnFyYqcldzI+Ks/FHpC1A==
+=Zi9p
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/noahrinehart
+
+==================================================================
