@@ -8,3 +8,4 @@ install:
 
 script:
   - yarn run build
+  - yarn run lint

@@ -1,6 +1,6 @@
 export default {
   name: 'Landing',
-  data() {
+  data () {
     return {}
-  },
+  }
 }

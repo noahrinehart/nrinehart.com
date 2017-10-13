@@ -5,6 +5,6 @@ export default {
   name: 'App',
   components: {
     'landing': Landing,
-    'logos': Logos,
-  },
+    'logos': Logos
+  }
 }
