@@ -2,11 +2,13 @@
 
 Personal portfolio website for Noah Rinehart built with React, TypeScript, and Vite.
 
+🌐 **Live Site**: [https://nrinehart.com](https://nrinehart.com)
+
 ## Tech Stack
 
-- **Frontend**: React 19, TypeScript
-- **Build Tool**: Vite 6.3.5
-- **Routing**: React Router DOM 7.6.1
+- **Frontend**: React, TypeScript
+- **Build Tool**: Vite
+- **Routing**: React Router DOM
 - **Styling**: CSS3 with modern features (flexbox, grid, animations)
 - **Linting**: ESLint with TypeScript support
 - **Deployment**: GitHub Pages with GitHub Actions
