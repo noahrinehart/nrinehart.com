@@ -1,54 +1,80 @@
-# React + TypeScript + Vite
+# nrinehart.com
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio website for Noah Rinehart built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend**: React 19, TypeScript
+- **Build Tool**: Vite 6.3.5
+- **Routing**: React Router DOM 7.6.1
+- **Styling**: CSS3 with modern features (flexbox, grid, animations)
+- **Linting**: ESLint with TypeScript support
+- **Deployment**: GitHub Pages with GitHub Actions
 
-## Expanding the ESLint configuration
+## Development
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Node.js 18 or higher
+- npm
+
+### Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/noahrinehart/nrinehart.com.git
+   cd nrinehart.com
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser to `http://localhost:5173`
+
+### Available Scripts
+
+- `npm run dev` - Start development server with hot module replacement
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint to check code quality
+- `npm run lint:fix` - Fix ESLint issues automatically
+
+## Deployment
+
+The site is automatically deployed to GitHub Pages when changes are pushed to the `master` branch. The deployment workflow:
+
+1. Builds the project using `npm run build`
+2. Uploads the `dist` folder as a GitHub Pages artifact
+3. Deploys to GitHub Pages environment
+
+## Project Structure
+
+```
+src/
+├── components/          # React components
+│   ├── Home.tsx/css    # Landing page with typing animation
+│   ├── Skills.tsx/css  # Skills showcase
+│   ├── Career.tsx/css  # Professional experience
+│   ├── Life.tsx/css    # Personal interests
+│   └── Contact.tsx/css # Contact information
+├── App.tsx/css         # Main app component with routing
+├── main.tsx           # Application entry point
+└── index.css          # Global styles
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Configuration
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **TypeScript**: Configured with separate configs for app (`tsconfig.app.json`) and build tools (`tsconfig.node.json`)
+- **Vite**: Optimized for React with proper base path configuration for GitHub Pages
+- **ESLint**: Modern configuration with TypeScript and React support
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## License
+
+This project is open source and available under the MIT License.
