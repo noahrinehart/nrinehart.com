@@ -12,7 +12,10 @@ function App() {
       <div className="app">
         <nav className="navbar">
           <div className="nav-container">
-            <Link to="/" className="nav-logo">Noah Rinehart</Link>
+            <Link to="/" className="nav-logo">
+              <img src="/favicon.svg" alt="Logo" className="nav-logo-icon" />
+              Noah Rinehart
+            </Link>
             <ul className="nav-menu">
               <li><NavLink to="/" className="nav-link">Home</NavLink></li>
               <li><NavLink to="/skills" className="nav-link">Skills</NavLink></li>

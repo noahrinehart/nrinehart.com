@@ -43,6 +43,14 @@ html {
   font-weight: bold;
   color: #333;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-logo-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .nav-menu {
