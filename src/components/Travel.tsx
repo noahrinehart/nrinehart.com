@@ -20,7 +20,7 @@ const travelTrips: TravelTrip[] = [
     date: '2022',
     location: 'Iceland',
     folder: '00-iceland',
-    coverImage: '01.jpg',
+    coverImage: '32.jpg',
     imageCount: 33
   }
 ];
@@ -115,7 +115,7 @@ function Travel() {
                 <div className="trip-preview" onClick={() => openSlideshow(trip)}>
                   <div className="image-container">
                     <img
-                      src={getImagePath(trip.folder, 0)}
+                      src={`/Pictures/Travel/${trip.folder}/${trip.coverImage}`}
                       alt={`${trip.name} preview`}
                       className="preview-image"
                       loading="lazy"
