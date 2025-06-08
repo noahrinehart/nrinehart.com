@@ -10,6 +10,7 @@ function Contact() {
           <a href="mailto:noah@nrinehart.com" className="contact-link">Email</a>
           <a href="https://linkedin.com/in/noahrinehart" className="contact-link">LinkedIn</a>
           <a href="https://github.com/noahrinehart" className="contact-link">GitHub</a>
+          <a href="https://www.instagram.com/noahrinehart/" className="contact-link">Instagram</a>
         </div>
       </div>
     </section>
