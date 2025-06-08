@@ -28,6 +28,7 @@ const travelTrips: TravelTrip[] = [
 function Travel() {
   const [selectedTrip, setSelectedTrip] = useState<TravelTrip | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [slideshowImageLoading, setSlideshowImageLoading] = useState(false);
 
   const openSlideshow = (trip: TravelTrip) => {
     setSelectedTrip(trip);
@@ -41,6 +42,7 @@ function Travel() {
 
   const nextImage = useCallback(() => {
     if (selectedTrip) {
+      setSlideshowImageLoading(true);
       setCurrentImageIndex((prev) =>
         prev === selectedTrip.imageCount - 1 ? 0 : prev + 1
       );
@@ -49,11 +51,16 @@ function Travel() {
 
   const prevImage = useCallback(() => {
     if (selectedTrip) {
+      setSlideshowImageLoading(true);
       setCurrentImageIndex((prev) =>
         prev === 0 ? selectedTrip.imageCount - 1 : prev - 1
       );
     }
   }, [selectedTrip]);
+
+  const handleSlideshowImageLoad = () => {
+    setSlideshowImageLoading(false);
+  };
 
   const getImagePath = (folder: string, imageNumber: number) => {
     return `/Pictures/Travel/${folder}/${String(imageNumber + 1).padStart(2, '0')}.jpg`;
@@ -106,11 +113,16 @@ function Travel() {
                 <p className="trip-location">{trip.location}</p>
                 <p>{trip.description}</p>
                 <div className="trip-preview" onClick={() => openSlideshow(trip)}>
-                  <img
-                    src={getImagePath(trip.folder, 0)}
-                    alt={`${trip.name} preview`}
-                    className="preview-image"
-                  />
+                  <div className="image-container">
+                    <img
+                      src={getImagePath(trip.folder, 0)}
+                      alt={`${trip.name} preview`}
+                      className="preview-image"
+                      loading="lazy"
+                      decoding="async"
+                      onLoad={(e) => e.currentTarget.classList.add('loaded')}
+                    />
+                  </div>
                   <div className="preview-overlay">
                     <span>{trip.imageCount} photos</span>
                   </div>
@@ -126,11 +138,16 @@ function Travel() {
           <div className="slideshow-content" onClick={(e) => e.stopPropagation()}>
             <button className="close-btn" onClick={closeSlideshow}>&times;</button>
             <button className="nav-btn prev-btn" onClick={prevImage}>&#8249;</button>
-            <img
-              src={getImagePath(selectedTrip.folder, currentImageIndex)}
-              alt={`${selectedTrip.name} ${currentImageIndex + 1}`}
-              className="slideshow-image"
-            />
+            <div className="slideshow-image-container">
+              {slideshowImageLoading && <div className="slideshow-loading"></div>}
+              <img
+                src={getImagePath(selectedTrip.folder, currentImageIndex)}
+                alt={`${selectedTrip.name} ${currentImageIndex + 1}`}
+                className={`slideshow-image ${slideshowImageLoading ? 'loading' : ''}`}
+                onLoad={handleSlideshowImageLoad}
+                onLoadStart={() => setSlideshowImageLoading(true)}
+              />
+            </div>
             <button className="nav-btn next-btn" onClick={nextImage}>&#8250;</button>
             <div className="slideshow-info">
               <h3>{selectedTrip.name}</h3>
